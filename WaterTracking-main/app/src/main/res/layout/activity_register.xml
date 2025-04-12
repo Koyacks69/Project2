@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:id="@+id/registerLayout">
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="97dp"
+        android:padding="16dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/textViewCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="Create an account"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSecureLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:text="Securely login to your account"
+        android:textColor="#8E8E8E" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/logoFullName"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/user"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Fullname"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/logoEmail"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/mail"
+            android:visibility="visible" />
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="303dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Enter email address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Phone Number label and input field with logo -->
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/logoPhone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/phone"
+            android:visibility="visible" />
+
+        <!-- Phone Number EditText -->
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="284dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Password label and input field with logo -->
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/logoPassword"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/lock"
+            android:visibility="visible" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="33dp" />
+
+    <!-- Create Account Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createAccountButton"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_border_button"
+        android:backgroundTint="@null"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="13dp" />
+
+    <!-- Already Have an Account Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewAlreadyHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Already Have an Account " />
+
+        <TextView
+            android:id="@+id/loginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Login"
+            android:textColor="@color/primary"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
